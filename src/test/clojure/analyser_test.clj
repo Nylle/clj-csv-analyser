@@ -32,7 +32,7 @@
                                                                     "'hello';;'world'"]))))
 
 (deftest analyse-can-read-both-gzipped-and-plain-csv-files
-  (is (= {:occurrences 30, :quote nil, :separator \|} (analyse "./testfiles/unquoted.csv.gz")))
-  (is (= {:occurrences 30, :quote nil, :separator \|} (analyse "./testfiles/unquoted.csv")))
-  (is (= {:occurrences 9, :quote nil, :separator \|} (analyse "./testfiles/unquoted.csv" 3))))
+  (is (= {:occurrences 30, :quote nil, :separator \|} (analyse "./src/test/resources/unquoted.csv.gz")))
+  (is (= {:occurrences 30, :quote nil, :separator \|} (analyse "./src/test/resources/unquoted.csv")))
+  (is (= {:occurrences 9, :quote nil, :separator \|} (analyse "./src/test/resources/unquoted.csv" 3))))
 
