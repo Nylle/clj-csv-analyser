@@ -4,13 +4,13 @@ This is just some practising Clojure on an actual real-world problem.
 
 ## Usage
 
-Detect quote and separator in a plain csv file:
+Detect quotation mark and separator in a plain csv file:
 ```clojure
 (analyse "myfile.csv")
 ;=> {:occurrences 10, :quote \", :separator \,}
 ```
 
-Detect quote and separator in a gzipped csv file:
+Detect quotation mark and separator in a gzipped csv file:
 ```clojure
 (analyse "myfile.csv.gz")
 ;=> {:occurrences 10, :quote \", :separator \,}
@@ -18,11 +18,11 @@ Detect quote and separator in a gzipped csv file:
 
 Provide the number of sample lines to be analysed in the file (default 10):
 ```clojure
-(analyse "myfile.csv" 10)
-;=> {:occurrences 10, :quote \", :separator \,}
+(analyse "myfile.csv" 100)
+;=> {:occurrences 100, :quote \", :separator \,}
 ```
 
-# Note to myself
+## Note to myself
 ```shell
 clj -m nrepl.cmdline
 ```
