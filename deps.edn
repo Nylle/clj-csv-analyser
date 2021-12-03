@@ -1,0 +1,8 @@
+{:mvn/repos {"central" {:url "https://repo1.maven.org/maven2/"}
+             "clojars" {:url "https://clojars.org/repo"}}
+ :paths     ["resources" "src/main/clojure"]
+ :deps      {org.clojure/clojure {:mvn/version "1.10.1"}
+             nrepl/nrepl         {:mvn/version "0.5.3"}}
+ :aliases   {:test   {:extra-paths ["src/test/clojure"]
+                      :extra-deps  {lambdaisland/kaocha {:mvn/version "1.0-612"}}
+                      :main-opts   ["-m" "kaocha.runner"]}}}
