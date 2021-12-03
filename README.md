@@ -2,6 +2,8 @@
 
 This is just some practising Clojure on an actual real-world problem.
 
+## Usage
+
 Detect quote and separator in a plain csv file:
 ```clojure
 (analyse "myfile.csv")
