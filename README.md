@@ -25,4 +25,5 @@ Provide the number of sample lines to be analysed in the file (default 10):
 ## Note to myself
 ```shell
 clj -m nrepl.cmdline
+deps -m nrepl.cmdline
 ```
